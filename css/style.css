@@ -327,5 +327,8 @@ Diseño Responsive
         margin-top: 390px;
         box-sizing: border-box;
     }
+    .col-md-3 img{
+        height: 250px;
+    }
 }
 
