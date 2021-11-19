@@ -201,7 +201,7 @@ About
    height: 500px;
 }
 
-.col-9 p{
+.col-md-9 p{
     width: 70%;
     margin-top: 90px;
     font-size: 1.1rem;
@@ -328,7 +328,7 @@ Diseño Responsive
         box-sizing: border-box;
     }
     .col-md-3 img{
-        height: 250px;
+        height: 350px;
     }
 }
 
