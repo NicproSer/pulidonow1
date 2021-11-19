@@ -333,6 +333,7 @@ Diseño Responsive
     }
     .col-md-9 p{
         margin-left: 20px;
+        width: 80%;
     }
 }
 
