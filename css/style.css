@@ -183,22 +183,14 @@ formulario
 /***********************
 About
 ***********************/
-.col-9{
+.col-md-9{
     width: 100%;
-    display: grid;
-     grid-auto-rows: minmax(125px, auto);
-    grid-template-columns: 2r 1fr;
-    gap: 1em;
     margin-top: 50px;
 }
 
-.col-3{
+.col-md-3{
     width: 100%;
-    display: grid;
-    grid-template-columns: 12fr 12fr;
-    gap: 1em;
     margin-top: 50px;
-     grid-auto-rows: minmax(125px, auto);
 }
 
 .col-3 img{
