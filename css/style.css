@@ -121,6 +121,10 @@ h1{
     background: black;
 }
 
+.fab:hover{
+    color: red;
+}
+
 
 /***********************
 formulario
