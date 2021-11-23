@@ -122,13 +122,13 @@ h1{
 }
 
 .social{
-    width: 450px;
+    width: 500px;
     height: 400px;
     display: block;
 }
 
 .so{
-    margin-top: 10px;
+    margin: auto;
 }
 
 .fab:hover{
@@ -350,7 +350,7 @@ Diseño Responsive
         width: 90%;
     }
     .social{
-        width: 300px;
+        width: 350px;
         height: 250px;
         display: block;
     }
