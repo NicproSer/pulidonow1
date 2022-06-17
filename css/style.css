@@ -194,6 +194,10 @@ formulario
     font-weight: 600;
 }
 
+#mailtip{
+    opacity: 0;
+  }
+
 /***********************
 About
 ***********************/

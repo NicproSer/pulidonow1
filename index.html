@@ -544,14 +544,15 @@
         </section>
 
         <section style="background-color: black;">
-            <div class="container" >
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6" align="center">
-                        <img src="/images/1.png" alt="Red Social" class="social" >
+                        <img src="/images/1.png" alt="Red Social" class="social">
                     </div>
                     <div class="col-md-6" align="center">
                         <h4 class="so" style="color: white;">Siguenos en nuestras redes sociales</h4>
-                        <a href="https://www.instagram.com/pulidonow/" ><i class="fab fa-instagram fa-3x" style="color: white;"></i></a>
+                        <a href="https://www.instagram.com/pulidonow/"><i class="fab fa-instagram fa-3x"
+                                style="color: white;"></i></a>
                     </div>
                 </div>
             </div>
@@ -563,11 +564,12 @@
                 <form class="form_container" action="" method="POST" id="form">
                     <h2 class="form_title">Contáctanos</h2>
                     <input type="text" class="form_input" placeholder="Nombre" required name="name">
-                    <input type="email" class="form_input" placeholder="Email" required name="_replyto">
+                    <input type="email" class="form_input" placeholder="Email" required name="email">
                     <textarea class="form_input--message" placeholder="Mensaje" required name="message"></textarea>
 
                     <input type="submit" value="Enviar" class="form_cta">
                 </form>
+                <a href="mailto:nicdipriziogomez@gmail.com" id="mailtip">Mail</a>
             </div>
         </section>
 
@@ -595,15 +597,19 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
 
-            <script>
-                const $form = document.querySelector('#form')
+        <script>
+            const $form = document.querySelector('#form')
+            const $buttonMailto = document.querySelector('#mailtip')
 
-                $form.addEventListener('submit', handleSubmit)
+            $form.addEventListener('submit', handleSubmit)
 
-                function handleSubmit(event) {
-                    event.preventDefault()
-                }
-            </script>
+            function handleSubmit(event) {
+                event.preventDefault()
+                const form = new FormData(this)
+                $buttonMailto.setAttribute('href', `mailto:nicdiprizio@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')}&body=${form.get('message')}`)
+                $buttonMailto.click()
+            }
+        </script>
 </body>
 
 </html>
